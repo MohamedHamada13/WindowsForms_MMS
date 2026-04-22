@@ -84,6 +84,23 @@
             tableLayoutPanel5 = new TableLayoutPanel();
             comboBox3 = new ComboBox();
             checkBox1 = new CheckBox();
+            panel3 = new Panel();
+            tabControl1 = new TabControl();
+            tabPage1 = new TabPage();
+            tabPage2 = new TabPage();
+            tabPage3 = new TabPage();
+            tabPage4 = new TabPage();
+            dataGridView3 = new DataGridView();
+            طباعه = new DataGridViewCheckBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewImageColumn();
+            بطاقه_ضريبيه = new DataGridViewImageColumn();
+            سجل_تجاري = new DataGridViewImageColumn();
+            بيان_الحساب = new DataGridViewTextBoxColumn();
+            م_تكلفه_بيانات_الحساب = new DataGridViewComboBoxColumn();
+            ن_تكلفه = new DataGridViewComboBoxColumn();
+            موبايل = new DataGridViewTextBoxColumn();
+            tabPage5 = new TabPage();
             RootTableLayout.SuspendLayout();
             menuStrip1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
@@ -100,6 +117,10 @@
             tableLayoutPanel3.SuspendLayout();
             tableLayoutPanel4.SuspendLayout();
             tableLayoutPanel5.SuspendLayout();
+            panel3.SuspendLayout();
+            tabControl1.SuspendLayout();
+            tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView3).BeginInit();
             SuspendLayout();
             // 
             // miniToolStrip
@@ -254,6 +275,7 @@
             RootTableLayout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             RootTableLayout.Controls.Add(menuStrip1, 0, 0);
             RootTableLayout.Controls.Add(tableLayoutPanel1, 0, 1);
+            RootTableLayout.Controls.Add(panel3, 0, 2);
             RootTableLayout.Dock = DockStyle.Fill;
             RootTableLayout.Location = new Point(0, 0);
             RootTableLayout.Margin = new Padding(9);
@@ -788,6 +810,157 @@
             checkBox1.TextAlign = ContentAlignment.MiddleCenter;
             checkBox1.UseVisualStyleBackColor = true;
             // 
+            // panel3
+            // 
+            panel3.BorderStyle = BorderStyle.FixedSingle;
+            panel3.Controls.Add(tabControl1);
+            panel3.Dock = DockStyle.Fill;
+            panel3.Location = new Point(3, 382);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(1056, 198);
+            panel3.TabIndex = 2;
+            // 
+            // tabControl1
+            // 
+            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Controls.Add(tabPage3);
+            tabControl1.Controls.Add(tabPage4);
+            tabControl1.Controls.Add(tabPage5);
+            tabControl1.Dock = DockStyle.Fill;
+            tabControl1.Location = new Point(0, 0);
+            tabControl1.Name = "tabControl1";
+            tabControl1.RightToLeft = RightToLeft.Yes;
+            tabControl1.RightToLeftLayout = true;
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new Size(1054, 196);
+            tabControl1.TabIndex = 0;
+            // 
+            // tabPage1
+            // 
+            tabPage1.Location = new Point(4, 29);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Padding = new Padding(3);
+            tabPage1.Size = new Size(1046, 163);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "تقارير";
+            tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            tabPage2.Location = new Point(4, 29);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(1046, 163);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "مقارانات";
+            tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            tabPage3.Location = new Point(4, 29);
+            tabPage3.Name = "tabPage3";
+            tabPage3.Padding = new Padding(3);
+            tabPage3.Size = new Size(1046, 163);
+            tabPage3.TabIndex = 2;
+            tabPage3.Text = "الخزينه";
+            tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            tabPage4.Controls.Add(dataGridView3);
+            tabPage4.Location = new Point(4, 29);
+            tabPage4.Name = "tabPage4";
+            tabPage4.Padding = new Padding(3);
+            tabPage4.Size = new Size(1046, 163);
+            tabPage4.TabIndex = 3;
+            tabPage4.Text = "بيانات الحساب";
+            tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView3
+            // 
+            dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView3.Columns.AddRange(new DataGridViewColumn[] { طباعه, Column3, Column4, بطاقه_ضريبيه, سجل_تجاري, بيان_الحساب, م_تكلفه_بيانات_الحساب, ن_تكلفه, موبايل });
+            dataGridView3.Dock = DockStyle.Fill;
+            dataGridView3.Location = new Point(3, 3);
+            dataGridView3.Name = "dataGridView3";
+            dataGridView3.RowHeadersWidth = 51;
+            dataGridView3.Size = new Size(1040, 157);
+            dataGridView3.TabIndex = 0;
+            // 
+            // طباعه
+            // 
+            طباعه.HeaderText = "طباعه";
+            طباعه.MinimumWidth = 6;
+            طباعه.Name = "طباعه";
+            طباعه.Width = 125;
+            // 
+            // Column3
+            // 
+            Column3.HeaderText = "ترميز";
+            Column3.MinimumWidth = 6;
+            Column3.Name = "Column3";
+            Column3.Width = 125;
+            // 
+            // Column4
+            // 
+            Column4.HeaderText = "صوره";
+            Column4.MinimumWidth = 6;
+            Column4.Name = "Column4";
+            Column4.Width = 125;
+            // 
+            // بطاقه_ضريبيه
+            // 
+            بطاقه_ضريبيه.HeaderText = "ب ضريبيه";
+            بطاقه_ضريبيه.MinimumWidth = 6;
+            بطاقه_ضريبيه.Name = "بطاقه_ضريبيه";
+            بطاقه_ضريبيه.Width = 125;
+            // 
+            // سجل_تجاري
+            // 
+            سجل_تجاري.HeaderText = "سجل تجاري";
+            سجل_تجاري.MinimumWidth = 6;
+            سجل_تجاري.Name = "سجل_تجاري";
+            سجل_تجاري.Width = 125;
+            // 
+            // بيان_الحساب
+            // 
+            بيان_الحساب.HeaderText = "بيان";
+            بيان_الحساب.MinimumWidth = 6;
+            بيان_الحساب.Name = "بيان_الحساب";
+            بيان_الحساب.Width = 125;
+            // 
+            // م_تكلفه_بيانات_الحساب
+            // 
+            م_تكلفه_بيانات_الحساب.HeaderText = "م تكلفه";
+            م_تكلفه_بيانات_الحساب.MinimumWidth = 6;
+            م_تكلفه_بيانات_الحساب.Name = "م_تكلفه_بيانات_الحساب";
+            م_تكلفه_بيانات_الحساب.Width = 125;
+            // 
+            // ن_تكلفه
+            // 
+            ن_تكلفه.HeaderText = "ن تكلفه";
+            ن_تكلفه.MinimumWidth = 6;
+            ن_تكلفه.Name = "ن_تكلفه";
+            ن_تكلفه.Width = 125;
+            // 
+            // موبايل
+            // 
+            موبايل.HeaderText = "موبايل";
+            موبايل.MinimumWidth = 6;
+            موبايل.Name = "موبايل";
+            موبايل.Width = 125;
+            // 
+            // tabPage5
+            // 
+            tabPage5.Location = new Point(4, 29);
+            tabPage5.Name = "tabPage5";
+            tabPage5.Padding = new Padding(3);
+            tabPage5.Size = new Size(1046, 163);
+            tabPage5.TabIndex = 4;
+            tabPage5.Text = "القيود";
+            tabPage5.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(120F, 120F);
@@ -821,6 +994,10 @@
             tableLayoutPanel4.PerformLayout();
             tableLayoutPanel5.ResumeLayout(false);
             tableLayoutPanel5.PerformLayout();
+            panel3.ResumeLayout(false);
+            tabControl1.ResumeLayout(false);
+            tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView3).EndInit();
             ResumeLayout(false);
         }
 
@@ -895,5 +1072,22 @@
         private ComboBox comboBox8;
         private Button button5;
         private Button button6;
+        private Panel panel3;
+        private TabControl tabControl1;
+        private TabPage tabPage1;
+        private TabPage tabPage2;
+        private TabPage tabPage3;
+        private TabPage tabPage4;
+        private DataGridView dataGridView3;
+        private DataGridViewCheckBoxColumn طباعه;
+        private DataGridViewTextBoxColumn Column3;
+        private DataGridViewImageColumn Column4;
+        private DataGridViewImageColumn بطاقه_ضريبيه;
+        private DataGridViewImageColumn سجل_تجاري;
+        private DataGridViewTextBoxColumn بيان_الحساب;
+        private DataGridViewComboBoxColumn م_تكلفه_بيانات_الحساب;
+        private DataGridViewComboBoxColumn ن_تكلفه;
+        private DataGridViewTextBoxColumn موبايل;
+        private TabPage tabPage5;
     }
 }

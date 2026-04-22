@@ -40,10 +40,6 @@
             menuStrip1 = new MenuStrip();
             tableLayoutPanel1 = new TableLayoutPanel();
             tableLayoutPanel6 = new TableLayoutPanel();
-            dataGridView1 = new DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            متثن = new DataGridViewTextBoxColumn();
             dataGridView2 = new DataGridView();
             بيان = new DataGridViewTextBoxColumn();
             panel2 = new Panel();
@@ -71,6 +67,15 @@
             comboBox8 = new ComboBox();
             button5 = new Button();
             button6 = new Button();
+            tableLayoutPanel10 = new TableLayoutPanel();
+            dataGridView1 = new DataGridView();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            متثن = new DataGridViewTextBoxColumn();
+            comboBox9 = new ComboBox();
+            tableLayoutPanel11 = new TableLayoutPanel();
+            button7 = new Button();
+            comboBox10 = new ComboBox();
             panel1 = new Panel();
             tableLayoutPanel2 = new TableLayoutPanel();
             button1 = new Button();
@@ -105,13 +110,15 @@
             menuStrip1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             panel2.SuspendLayout();
             tableLayoutPanel7.SuspendLayout();
             tableLayoutPanel8.SuspendLayout();
             tableLayoutPanel9.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
+            tableLayoutPanel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            tableLayoutPanel11.SuspendLayout();
             panel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
@@ -319,9 +326,9 @@
             tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 480F));
             tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel6.Controls.Add(dataGridView1, 2, 0);
             tableLayoutPanel6.Controls.Add(dataGridView2, 0, 0);
             tableLayoutPanel6.Controls.Add(panel2, 1, 0);
+            tableLayoutPanel6.Controls.Add(tableLayoutPanel10, 2, 0);
             tableLayoutPanel6.Dock = DockStyle.Fill;
             tableLayoutPanel6.Location = new Point(3, 3);
             tableLayoutPanel6.Name = "tableLayoutPanel6";
@@ -329,39 +336,6 @@
             tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel6.Size = new Size(1050, 267);
             tableLayoutPanel6.TabIndex = 1;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, متثن });
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(768, 3);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RightToLeft = RightToLeft.Yes;
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(279, 261);
-            dataGridView1.TabIndex = 0;
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "م تكلفه";
-            Column1.MinimumWidth = 50;
-            Column1.Name = "Column1";
-            Column1.Width = 65;
-            // 
-            // Column2
-            // 
-            Column2.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            Column2.HeaderText = "الحساب";
-            Column2.MinimumWidth = 50;
-            Column2.Name = "Column2";
-            // 
-            // متثن
-            // 
-            متثن.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            متثن.HeaderText = "خزينه";
-            متثن.MinimumWidth = 50;
-            متثن.Name = "متثن";
             // 
             // dataGridView2
             // 
@@ -655,6 +629,99 @@
             button6.TabIndex = 4;
             button6.Text = "حساب جديد";
             button6.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel10
+            // 
+            tableLayoutPanel10.ColumnCount = 1;
+            tableLayoutPanel10.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel10.Controls.Add(dataGridView1, 0, 1);
+            tableLayoutPanel10.Controls.Add(comboBox9, 0, 0);
+            tableLayoutPanel10.Controls.Add(tableLayoutPanel11, 0, 2);
+            tableLayoutPanel10.Dock = DockStyle.Fill;
+            tableLayoutPanel10.Location = new Point(768, 3);
+            tableLayoutPanel10.Name = "tableLayoutPanel10";
+            tableLayoutPanel10.RowCount = 3;
+            tableLayoutPanel10.RowStyles.Add(new RowStyle(SizeType.Percent, 15.2073736F));
+            tableLayoutPanel10.RowStyles.Add(new RowStyle(SizeType.Percent, 84.7926254F));
+            tableLayoutPanel10.RowStyles.Add(new RowStyle(SizeType.Absolute, 39F));
+            tableLayoutPanel10.Size = new Size(279, 261);
+            tableLayoutPanel10.TabIndex = 3;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, متثن });
+            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.Location = new Point(3, 36);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RightToLeft = RightToLeft.Yes;
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(273, 182);
+            dataGridView1.TabIndex = 1;
+            // 
+            // Column1
+            // 
+            Column1.HeaderText = "م تكلفه";
+            Column1.MinimumWidth = 50;
+            Column1.Name = "Column1";
+            Column1.Width = 65;
+            // 
+            // Column2
+            // 
+            Column2.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            Column2.HeaderText = "الحساب";
+            Column2.MinimumWidth = 50;
+            Column2.Name = "Column2";
+            // 
+            // متثن
+            // 
+            متثن.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            متثن.HeaderText = "خزينه";
+            متثن.MinimumWidth = 50;
+            متثن.Name = "متثن";
+            // 
+            // comboBox9
+            // 
+            comboBox9.Anchor = AnchorStyles.None;
+            comboBox9.FormattingEnabled = true;
+            comboBox9.Location = new Point(56, 3);
+            comboBox9.Name = "comboBox9";
+            comboBox9.Size = new Size(166, 28);
+            comboBox9.TabIndex = 2;
+            // 
+            // tableLayoutPanel11
+            // 
+            tableLayoutPanel11.Anchor = AnchorStyles.None;
+            tableLayoutPanel11.ColumnCount = 2;
+            tableLayoutPanel11.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel11.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 135F));
+            tableLayoutPanel11.Controls.Add(button7, 0, 0);
+            tableLayoutPanel11.Controls.Add(comboBox10, 1, 0);
+            tableLayoutPanel11.Location = new Point(14, 224);
+            tableLayoutPanel11.Name = "tableLayoutPanel11";
+            tableLayoutPanel11.RowCount = 1;
+            tableLayoutPanel11.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel11.Size = new Size(250, 34);
+            tableLayoutPanel11.TabIndex = 3;
+            // 
+            // button7
+            // 
+            button7.Anchor = AnchorStyles.None;
+            button7.Location = new Point(25, 3);
+            button7.Name = "button7";
+            button7.Size = new Size(64, 28);
+            button7.TabIndex = 0;
+            button7.Text = "All";
+            button7.UseVisualStyleBackColor = true;
+            // 
+            // comboBox10
+            // 
+            comboBox10.Dock = DockStyle.Fill;
+            comboBox10.FormattingEnabled = true;
+            comboBox10.Location = new Point(118, 3);
+            comboBox10.Name = "comboBox10";
+            comboBox10.Size = new Size(129, 28);
+            comboBox10.TabIndex = 1;
             // 
             // panel1
             // 
@@ -976,7 +1043,6 @@
             menuStrip1.PerformLayout();
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             panel2.ResumeLayout(false);
             tableLayoutPanel7.ResumeLayout(false);
@@ -986,6 +1052,9 @@
             tableLayoutPanel9.ResumeLayout(false);
             tableLayoutPanel9.PerformLayout();
             flowLayoutPanel1.ResumeLayout(false);
+            tableLayoutPanel10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            tableLayoutPanel11.ResumeLayout(false);
             panel1.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel3.ResumeLayout(false);
@@ -1028,10 +1097,6 @@
         private MenuStrip menuStrip1;
         private TableLayoutPanel tableLayoutPanel1;
         private TableLayoutPanel tableLayoutPanel6;
-        private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn متثن;
         private DataGridView dataGridView2;
         private DataGridViewTextBoxColumn بيان;
         private Panel panel1;
@@ -1089,5 +1154,14 @@
         private DataGridViewComboBoxColumn ن_تكلفه;
         private DataGridViewTextBoxColumn موبايل;
         private TabPage tabPage5;
+        private TableLayoutPanel tableLayoutPanel10;
+        private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn متثن;
+        private ComboBox comboBox9;
+        private TableLayoutPanel tableLayoutPanel11;
+        private Button button7;
+        private ComboBox comboBox10;
     }
 }
